@@ -1,0 +1,202 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+svg {
+    transform: scale(3.5);
+    z-index: -99;
+}
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.gmae {
+    position: absolute;
+    height: 664px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.holes {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    position: relative;
+}
+.hole1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    animation: bounceOut; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4.8s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+.hole2 {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 150px;
+    height: 150px;
+    animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 6.7s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+.hole3 {
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    width: 80px;
+    height: 80px;
+    animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5.5s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+.hole4 {
+    position: absolute;
+    top: 35%;
+    left: 38%;
+    width: 100px;
+    height: 100px;
+    animation: bounceOut; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4.5s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+.hole5 {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    width: 110px;
+    height: 110px;
+    animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4.2s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+.hole5 {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    width: 120px;
+    height: 120px;
+    animation: bunceInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 6.5s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+.hole6 {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    width: 150px;
+    height: 150px;
+    animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 6.2s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+.hole7 {
+    position: absolute;
+    top: 15%;
+    left: 68%;
+    width: 80px;
+    height: 80px;
+    animation: bounceOut; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4.8s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+.hole8 {
+    position: absolute;
+    top: 36%;
+    left: 78%;
+    width: 150px;
+    height: 150px;
+    animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4.8s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+.hole9 {
+    position: absolute;
+    top: 76%;
+    left: 83%;
+    width: 130px;
+    height: 130px;
+    animation: bounceOut; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4.6s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+
+input {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 170px;
+    height: 170px;
+    background: url(./rabit_start.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    border: rgb(87, 40, 40) 5px solid;
+    animation: rubberBand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.rabit_text {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    width: 300px;
+    height: 80px;
+    margin: 0;
+    padding: 30px 10px 0px 10px;
+    font-size: 16px;
+    background: rgb(253, 243, 187);
+    border: 5px solid rgb(158, 95, 58);
+    border-radius: 20px;
+}
+.p_text {
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    margin: 0;
+    padding: 10px 10px 0px 10px;
+    font-size: 16px;
+    background: rgb(253, 243, 187);
+    border: 5px solid rgb(158, 95, 58);
+    border-radius: 20px;
+}
+.noshow {
+    display: none;
+}
+.show {
+    display: block;
+    animation: fadeIn 1s 1;
+}
+.red {
+    background: url(./rabit-cake.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.blue {
+    background: url(.//rabit-cake-stolen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.other {
+    background: url(./other.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.other_wrong {
+    background: url(./other_wrong.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
